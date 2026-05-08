@@ -120,6 +120,8 @@ export function Experience() {
                 fontWeight: 500,
                 letterSpacing: '0.01em',
                 color: 'var(--text-muted)',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
               }}
             >
               {job.period}
@@ -172,6 +174,8 @@ export function Experience() {
                       fontWeight: 500,
                       color: 'var(--text-muted)',
                       letterSpacing: '0.01em',
+                      whiteSpace: 'nowrap',
+                      flexShrink: 0,
                     }}
                   >
                     {role.period}

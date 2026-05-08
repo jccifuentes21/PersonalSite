@@ -59,14 +59,7 @@ export function Skills() {
             whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.45, ease: EASE_OUT, delay: i * 0.055 }}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '110px 1fr',
-              gap: '16px 32px',
-              padding: '20px 0',
-              borderBottom: '1px solid var(--border)',
-              alignItems: 'start',
-            }}
+            className="skill-row"
           >
             <span
               style={{

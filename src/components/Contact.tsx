@@ -118,6 +118,7 @@ export function Contact() {
                     {link.label}
                   </p>
                   <p
+                    className="contact-value"
                     style={{
                       fontSize: '0.9375rem',
                       fontWeight: 500,

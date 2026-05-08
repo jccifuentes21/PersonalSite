@@ -177,6 +177,32 @@ ul {
   background: var(--border);
 }
 
+/* Skills row — stacks on mobile */
+.skill-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+@media (max-width: 520px) {
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+/* Truncate long URLs on narrow screens */
+@media (max-width: 480px) {
+  .contact-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 52vw;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
